@@ -1,3 +1,3 @@
 #!/bin/bash
-count=$(echo "$PATH" | grep -o ":" | wc -l) total_count=$((count + 1)) echo "Number of directories in PATH: $total_count"
+echo $((` echo $PATH | grep -o ":" | wc -1 ` +1))
 
